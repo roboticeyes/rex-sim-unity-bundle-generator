@@ -63,7 +63,7 @@ public class CreateRexAssets
             Directory.CreateDirectory (assetBundleDirectoryPath);
         }
 
-        BuildPipeline.BuildAssetBundles (assetBundleDirectoryPath, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);
+        BuildPipeline.BuildAssetBundles (assetBundleDirectoryPath, BuildAssetBundleOptions.None, BuildTarget.WSAPlayer);
 
         ExtractBundles (bundleFileNames);
         #endregion
