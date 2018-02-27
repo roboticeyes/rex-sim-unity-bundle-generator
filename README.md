@@ -39,16 +39,8 @@ Next, drag the material `Person` located in `Resources/Materials` onto the model
 
 ![](doc/model_set_material.png)
 
-Drag the Script `Person` located under `Resources/Scripts` in the `Project` window onto the model entry in the `Hierarchy` window. If you then select it, the Script should show up in the `Inspector` window on the right side.
-
-![](doc/model_add_script.png)
-
 ## Getting the Animations to work (optional)
 You may skip this step if your model does not come with animations or you don't want to include animations. Just go on with the [exporting](#exporting-the-model-for-rex) procedure.
-
-Select the model in the `Hierarchy` window on the left and make sure the `Is Animated` checkbox in the `Inspector` window on the right is ticked.
-
-![](doc/model_set_animated_true.png)
 
 If you don't see an `Animator` component in the `Inspector` window (like it appears in the screenshot above) click the `Add Component` button and type "animator". The select the `Animator` component.
 
@@ -72,11 +64,6 @@ Click the circle icon next to the `Motion` field in the `Inspector` window and s
 Repeat the same for the Idle animation by selecting the `Idle` node in the `Animator` window and choosing the desired idle animation.
 
 ![](doc/anim_add_idle.png)
-
-### Testing the Animation
-If you successfully completed all of the steps above, you can click the `Play` button in the upper center location of Unity. Once the Editor switches to the `Game` window, you can adjust the slider to see if the animation adapts to the speed. If it's set all the way to the left the idle animation should play. If you dont see your model make sure its `Transform` position fields are set to `0`.
-
-![](doc/anim_test.png)
 
 ## Exporting the Model for REX
 Once you are happy with your settings make sure your model's name in the `Hierarchy` window is `SimulationModel`. If not, simply right click it and select `Rename`.
